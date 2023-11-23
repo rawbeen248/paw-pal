@@ -1,0 +1,35 @@
+.splash-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: linear-gradient(180deg, #EEDCFF 0%, #D7A3FF 100%);
+}
+
+.splashh {
+  max-width: 350px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 80vh;
+    max-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated font family */
+  
+}
+
+.splashh-container {
+  height: 720px;
+  max-width: 800px; /* Added maximum width for better content alignment */
+  border-radius: 20px;
+  border: 2px solid #a2e8bd;
+  box-shadow: 0px 0px 10px #a2e8bd, 0 2px 4px rgba(0, 0, 0, 0.1); /* Added subtle box-shadow */
+  background-color: white;
+  padding: 10px; /* Increased padding for better content spacing */
+  background-clip: padding-box;
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(to top, #ffffff 0%, #f8f8f8 100%); /* Added subtle background color gradient */
+}

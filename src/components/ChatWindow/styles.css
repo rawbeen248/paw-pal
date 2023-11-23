@@ -1,0 +1,160 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Chat window styles */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  flex-grow: 1;
+  background-color: #fffffff4;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  margin: 10px auto;
+  max-height: calc(100vh - 150px); /* Adjust as needed */
+  overflow-y: auto;
+  position: relative; /* Added to properly position form-container */
+}
+
+.chat-window h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  text-align: center; /* Centered User1 text */
+  font-weight: bold; /* Made User1 text bold */
+  font-family: 'Geneva', Tahoma, Geneva, Verdana, sans-serif; /* Prettier font for User1 text */
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #ccc; /* Added border */
+  border-radius: 10px;
+}
+
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  max-height: calc(100% - 100px);
+  overflow-y: auto;
+  background-color: #f8eee4;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  /*border-bottom: 3px solid #ccc; /* Added border between content window and messages */
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  top: 60px;
+}
+
+.message {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 5px 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 80%;
+}
+
+.message.left {
+  text-align: left;
+  color: white;
+  margin-left: 25px;
+  background-color: #07a41a;
+  align-self: flex-start;
+  border-bottom-left-radius: 0;
+}
+
+.message.right {
+  text-align: right;
+  margin-right: 25px;
+  background-color: #0b93f6;
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 0;
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+  background-color: #ffffff;
+  /*border-top: 1px solid #ccc;*/
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  width: auto; /* Set width to auto to allow the button to be smaller */
+  padding: 0 1px;
+  bottom: 25px;
+  position: absolute;
+}
+
+.form input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 14px;
+  margin-left: -8px;
+  font-size: 12px;
+  border: none;
+  height: 30px;
+  border-radius: 25px;
+  outline: none;
+  max-width: calc(100% - 100px);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  background-color: #f1f1f1;
+}
+
+.form button {
+  background-color: #0b93f6;
+  color: white;
+  height: 30px;
+  padding: 0px 5px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  outline: none;
+  font-size: 12px;
+  /* changed width and margin */
+  width: 40px;
+  margin-left: 25px;
+}
+
+.form button:hover {
+  background-color: #007bff;
+}
+ 

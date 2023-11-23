@@ -1,0 +1,109 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+  }
+
+  .logocontainer_chat {
+    position: absolute;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    left: 160px;
+    top: 32px;
+  }
+  
+  .logo_chat {
+    width: 35px;
+    height: 30px;
+  }
+  
+  .conversations {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    height: 640px;
+    margin-top: 40px;
+    overflow-y: auto;
+  }
+  
+  .user-box {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    max-width: 600px;
+    padding: 5px;
+    margin-left: 40px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #333;
+    transition: all 0.2s ease;
+  }
+  
+  .user-box::before {
+    content: "";
+    background-image: url('https://www.hartz.com/wp-content/uploads/2022/04/small-dog-owners-1.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 10px;
+    left: -50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .user-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .user-info {
+    background-color: #f2f2f2;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  
+  .user-info h2 {
+    font-size: 14px;
+    margin: 10px;
+  }
+  
+  .user-info p {
+    font-size: 12px;
+    margin: 0;
+    color: #999;
+  }
+  
+  .user-info span {
+    font-size: 12px;
+    color: #999;
+  }
+  
+  .chat-list {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .user-box::after {
+    content: "3";
+    background-color: #0084ff;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  

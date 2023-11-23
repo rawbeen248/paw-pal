@@ -1,0 +1,68 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.heart-icon::before {
+  content: "❤";
+  font-size: 24px;
+  color: red;
+  margin-bottom: 1px;
+  display: block;
+  text-align: center;
+}
+
+.pet-list {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content: top;
+  margin-top: 10px;
+  
+  max-height: calc(100vh - 180px);
+  overflow-y: auto;
+  padding-bottom: 30px; /* Add extra padding at the bottom */
+}
+
+/* Hide the scrollbar in WebKit browsers */
+.pet-list::-webkit-scrollbar {
+  display: none;
+}
+
+
+.pet-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 90%;
+  max-width: 600px;
+  margin: 10px;
+  margin-left:14px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.pet-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.pet-info {
+  flex-grow: 1;
+}
+
+.pet-info h2,
+.pet-info h4 {
+  margin: 0;
+}
+
+.pet-info p {
+  margin: 5px 0;
+}

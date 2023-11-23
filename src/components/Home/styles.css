@@ -1,0 +1,103 @@
+/*.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f6fa;
+  font-family: "Roboto", sans-serif;
+}*/
+
+.logocontainer {
+  position: absolute;
+  left: 155px;
+  top: -2px;
+}
+
+.logo {
+  width: 60px;
+  height: 50px;
+}
+
+
+.card-container {
+  position: relative;
+  margin-top: 2px;
+  margin-left: 0px;
+  width: 300px;
+  height: auto;
+}
+
+.filter-button {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  z-index: 1000;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2px;
+}
+
+.card-actions button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin: 0 1px;
+}
+
+.card-actions button:hover {
+  color: #007bff;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.buttons-container {
+  display: block;
+  justify-content: space-around;
+  width: 100%;
+  bottom: 0%;
+}
+
+.dislike-button,
+.like-button {
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  outline: none;
+}
+
+.dislike-button {
+  background-color: red;
+  color: white;
+  bottom: -680px;
+  margin-left: 225px;
+}
+
+.like-button {
+  background-color: rgb(4, 192, 4);
+  color: white;
+  bottom: -680px;
+  margin-left: 25px;
+}
+
+.dislike-button:hover,
+.like-button:hover {
+  opacity: 0.8;
+}

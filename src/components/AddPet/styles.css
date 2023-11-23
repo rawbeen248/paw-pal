@@ -1,0 +1,47 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.add-pet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .add-pet-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .add-pet-form label {
+    padding:10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .add-pet-form input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem !important; /* Add margin bottom */
+  }
+  
+  .add-pet-form textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem !important; /* Add margin bottom */
+    resize: vertical;
+  }
+  
+  .add-pet-form button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+  }

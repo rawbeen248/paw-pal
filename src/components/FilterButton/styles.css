@@ -1,0 +1,27 @@
+.filter-options-container {
+  background-color: white;
+  width: 100%;
+  max-height: calc(100vh / 3);
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.filter-options-container .MuiMenuItem-root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.filter-options-container .MuiSlider-root {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.MuiPopover-paper {
+  width: 260px;
+  max-height: calc(100vh / 3);
+  margin-left:692px;
+  margin-top:35px;
+}
